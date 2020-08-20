@@ -1,7 +1,7 @@
 {
-  "name": "grocery-list",
+  "name": "react-grocery-list",
   "version": "1.0.0",
-  "description": "",
+  "description": "A grocery list UI created using React and styled with SCSS.",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
