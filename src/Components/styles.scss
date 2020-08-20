@@ -1,0 +1,269 @@
+/* Google font imports */
+/* Open Sans 400 */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+// Montserrat Light 300
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+// ------------------------------------------------------
+// Style the body & root for display purposes here in codepen.
+// These are not essential for the component itself.
+// ------------------------------------------------------
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(180, 255, 179);
+  background: -moz-linear-gradient(
+    222deg,
+    rgba(180, 255, 179, 1) 0%,
+    rgba(0, 133, 164, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    222deg,
+    rgba(180, 255, 179, 1) 0%,
+    rgba(0, 133, 164, 1) 100%
+  );
+  background: linear-gradient(
+    222deg,
+    rgba(180, 255, 179, 1) 0%,
+    rgba(0, 133, 164, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b4ffb3",endColorstr="#0085a4",GradientType=1);
+}
+// -------------------------------------------------------------
+// Component Styling using SCSS
+// Note: could also use node-sass as of create-react-app v2
+// -------------------------------------------------------------
+
+.grocery-list-container {
+  width: 330px;
+  height: 600px;
+  background-color: #f7f7f7;
+  box-shadow: 8px 8px 7px #454545;
+  border: 3px solid black;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  // Style the grocery list view
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    padding: 0 12px;
+    text-align: left;
+  }
+
+  .category-list-container {
+    width: 100%;
+    flex-grow: 1;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    padding: 0px 12px 12px 12px;
+    border-top: 3px solid black;
+  }
+
+  // Style the category accordion
+  .category-container {
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-top: -8px;
+  }
+
+  .category-item-count-total {
+    height: 12px;
+    width: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    font-variant-numeric: tabular-nums;
+    border-radius: 50%;
+    padding: 8px;
+    position: relative;
+    float: right;
+    top: 15px;
+    left: 10px;
+  }
+
+  .accordion_container {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 3px solid black;
+    background-color: white;
+  }
+
+  /* style the title button of the accordion menu */
+  .accordion_title {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    p {
+      flex-grow: 1;
+      text-align: left;
+    }
+  }
+
+  /* Style the list item container divs */
+  .list_item_container {
+    width: 100%;
+    height: 50px;
+    padding-left: 5px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-top: 1px solid #a8a8a8;
+    box-sizing: border-box;
+
+    .add-item-button {
+      margin-left: 5px;
+      font-size: 16px;
+      line-height: 20px;
+      background-color: green;
+      color: white;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      width: 20px;
+      height: 20px;
+    }
+
+    .list-item-checkbox {
+      height: 16px;
+      width: 16px;
+    }
+
+    .add-item-button-label {
+      margin-left: 8px;
+      font-size: 14px;
+    }
+  }
+
+  /* Style the first lit item top border, makes the title look encloses without overlapping borders when the accordion is closed */
+  .accordion_content .list_item_container:first-of-type {
+    border-top: 3px solid black;
+  }
+
+  /* Style the list items p text */
+  .list_item_container input {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    border: none;
+    padding: 8px 8px 8px 0px;
+    margin-left: 8px;
+  }
+
+  .list_item_container input:focus {
+    outline: none !important;
+    border-bottom: 1.5px solid black;
+  }
+
+  /* Style list_item text when list_item_container is hovered */
+  .list_item_container:hover > input {
+    color: #0072c9;
+  }
+
+  //  Style the category selection menu, i.e the grid menu view
+  .category-menu-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .category-grid-container {
+      width: 100%;
+      flex-grow: 1;
+      overflow-y: scroll;
+      display: flex;
+      // grid wrap relies on the assumption that we have a multiple
+      // of 3 for categories, i.e. 9 or 21 categories, ets
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0 10px 0;
+      background-color: #f7f7f7;
+
+      .category-menu-item-container {
+        height: 95px;
+        width: 28%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        border: 2px solid lightgrey;
+        border-radius: 5px;
+        margin: 6px;
+        overflow: hidden;
+
+        .grid-item {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: white;
+
+          button {
+            height: 100%;
+            width: 100%;
+            outline: none;
+            border: none;
+          }
+          button:hover {
+            background-color: white;
+          }
+
+          p {
+            text-align: center;
+          }
+        }
+      }
+      .enabled {
+        border: 2px solid green;
+      }
+    }
+  }
+
+  .menu-items-container,
+  .category-menu-bar {
+    height: 50px;
+    min-height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid black;
+    background-color: #f7f7f7;
+  }
+
+  .menu-item {
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
