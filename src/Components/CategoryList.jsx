@@ -8,7 +8,13 @@ export default class CategoryList extends React.Component {
     let enabledCategories = this.props.categories
       .filter((category) => category.enabled)
       .map((category, index) => {
-        return <Category key={`category-${index}`} name={category.name} />;
+        return (
+          <Category
+            key={`category-${index}`}
+            name={category.name}
+            icon={category.icon}
+          />
+        );
       });
     return <div>{enabledCategories}</div>;
   }

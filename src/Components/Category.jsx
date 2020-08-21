@@ -151,6 +151,11 @@ export default class Category extends React.Component {
               className="accordion_title"
               onClick={this.toggleContentVisible}
             >
+              <img
+                alt={`${this.props.name} icon`}
+                className="category-list-item-icon"
+                src={this.props.icon}
+              />
               <p>{this.props.name}</p>
             </button>
           </div>
