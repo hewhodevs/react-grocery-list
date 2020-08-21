@@ -109,7 +109,7 @@ export default class Category extends React.Component {
         // return tick icon
         itemCount = <p>&#10004;</p>;
         itemCountStyle = {
-          backgroundColor: "#0d9e53"
+          backgroundColor: "#21c44d"
         };
       } else {
         // else return count of remaining items yet to acquire
