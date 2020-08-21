@@ -21,6 +21,11 @@ export default class CategoryMenuItem extends React.Component {
       >
         <div className="grid-item">
           <button onClick={this.toggleCategory}>
+            <img
+              alt="fruit category"
+              className="category-grid-item-image"
+              src={this.props.icon}
+            />
             <p>{this.props.name}</p>
           </button>
         </div>

@@ -13,6 +13,7 @@ export default class CategoryMenu extends React.Component {
                 id={`category-grid-item-${index}`}
                 name={category.name}
                 enabled={category.enabled}
+                icon={category.icon}
                 toggleCategory={this.props.toggleCategory}
               />
             );

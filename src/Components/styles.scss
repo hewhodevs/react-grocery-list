@@ -235,8 +235,13 @@ body {
           button:hover {
             background-color: white;
           }
+          .category-grid-item-image {
+            margin-top: 5px;
+            width: 40px;
+          }
 
           p {
+            margin-top: 5px;
             text-align: center;
           }
         }

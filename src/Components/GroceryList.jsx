@@ -12,107 +12,128 @@ export default class GroceryList extends React.Component {
         {
           name: "Fruit",
           enabled: true,
-          items: []
+          items: [],
+          icon: "https://image.flaticon.com/icons/svg/3267/3267132.svg"
         },
         {
           name: "Vegetables",
           enabled: true,
-          items: []
+          items: [],
+          icon: "https://image.flaticon.com/icons/svg/3267/3267279.svg"
         },
         {
           name: "Dairy",
           enabled: true,
-          items: []
+          items: [],
+          icon: "https://image.flaticon.com/icons/svg/3267/3267226.svg"
         },
         {
           name: "Canned Goods",
           enabled: false,
-          items: []
+          items: [],
+          icon: "https://image.flaticon.com/icons/svg/372/372954.svg"
         },
         {
           name: "Frozen Foods",
           enabled: false,
-          items: []
+          items: [],
+          icon: "https://image.flaticon.com/icons/svg/2458/2458102.svg"
         },
         {
           name: "Meat",
           enabled: false,
-          items: []
+          items: [],
+          icon: "https://image.flaticon.com/icons/svg/3267/3267187.svg"
         },
         {
-          name: "Fish",
+          name: "Seafood",
           enabled: false,
-          items: []
+          items: [],
+          icon: "https://image.flaticon.com/icons/svg/3267/3267210.svg"
         },
         {
           name: "Deli",
           enabled: true,
-          items: []
+          items: [],
+          icon: "https://image.flaticon.com/icons/svg/992/992756.svg"
         },
         {
           name: "Condiments",
           enabled: false,
-          items: []
+          items: [],
+          icon: "https://image.flaticon.com/icons/svg/3142/3142503.svg"
         },
         {
           name: "Snacks",
           enabled: false,
-          items: []
+          items: [],
+          icon: "https://image.flaticon.com/icons/svg/3142/3142682.svg"
         },
         {
           name: "Bread",
           enabled: false,
-          items: []
+          items: [],
+          icon: "https://image.flaticon.com/icons/svg/992/992747.svg"
         },
         {
           name: "Cereal",
           enabled: false,
-          items: []
+          items: [],
+          icon: "https://image.flaticon.com/icons/svg/992/992755.svg"
         },
         {
           name: "Baking",
           enabled: false,
-          items: []
+          items: [],
+          icon: "https://image.flaticon.com/icons/svg/2917/2917629.svg"
         },
         {
           name: "Drinks",
           enabled: false,
-          items: []
+          items: [],
+          icon: "https://image.flaticon.com/icons/svg/2738/2738730.svg"
         },
         {
           name: "Baby Items",
           enabled: false,
-          items: []
+          items: [],
+          icon: "https://image.flaticon.com/icons/svg/3081/3081902.svg"
         },
         {
           name: "Personal",
           enabled: false,
-          items: []
+          items: [],
+          icon: "https://image.flaticon.com/icons/svg/3082/3082046.svg"
         },
         {
           name: "Health",
           enabled: false,
-          items: []
+          items: [],
+          icon: "https://image.flaticon.com/icons/svg/2754/2754831.svg"
         },
         {
           name: "Toiletries",
           enabled: false,
-          items: []
+          items: [],
+          icon: "https://image.flaticon.com/icons/svg/3142/3142620.svg"
         },
         {
           name: "Household",
           enabled: false,
-          items: []
+          items: [],
+          icon: "https://image.flaticon.com/icons/svg/3022/3022961.svg"
         },
         {
           name: "Other1",
           enabled: false,
-          items: []
+          items: [],
+          icon: "https://image.flaticon.com/icons/svg/787/787159.svg"
         },
         {
           name: "Other2",
           enabled: false,
-          items: []
+          items: [],
+          icon: "https://image.flaticon.com/icons/svg/787/787159.svg"
         }
       ]
     };
