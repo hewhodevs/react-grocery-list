@@ -189,7 +189,10 @@ export default class GroceryList extends React.Component {
             </div>
             <div className="menu-item">
               <button onClick={this.toggleCategoryGrid}>
-                choose categories
+                <img
+                  alt="choose categories button"
+                  src="https://image.flaticon.com/icons/svg/566/566001.svg"
+                />
               </button>
             </div>
             <div className="menu-item">

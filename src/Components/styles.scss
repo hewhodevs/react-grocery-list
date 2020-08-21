@@ -228,7 +228,6 @@ body {
           display: flex;
           justify-content: center;
           align-items: center;
-          background-color: white;
 
           button {
             height: 100%;
@@ -251,7 +250,7 @@ body {
         }
       }
       .enabled {
-        border: 2px solid green;
+        border: 2px solid #21c44d;
       }
     }
   }
@@ -274,5 +273,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    button {
+      height: 100%;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      outline: none;
+
+      img {
+        height: 100%;
+      }
+    }
   }
 }
